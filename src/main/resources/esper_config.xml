@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<esper-configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <engine-settings>
+        <defaults>
+            <threading>
+                <!-- Disable internal timer to follow event timing instead -->
+                <!-- MJR: Don't know why msec-resolution is required when internal timer is not used? -->
+                <internal-timer enabled="false" msec-resolution="100"/>
+            </threading>
+        </defaults>
+    </engine-settings>
+
+    <event-type name="ObjectEvent">
+        <xml-dom root-element-name="ObjectEvent" schema-resource="ObjectEvent.xsd">
+        </xml-dom>
+    </event-type>
+
+    <event-type name="AggregationEvent">
+        <xml-dom root-element-name="AggregationEvent" schema-resource="AggregationEvent.xsd">
+        </xml-dom>
+    </event-type>
+
+    <event-type name="CSVOut">
+    </event-type>
+
+</esper-configuration>

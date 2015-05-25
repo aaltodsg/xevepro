@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema
+        targetNamespace="http://purl.org/FIspace/eem#"
+        xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="ObjectEvent">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element type="xs:string" name="hasEventID"/>
+        <xs:element type="xs:string" name="label"/>
+        <xs:element type="xs:dateTime" name="eventOccurredAt"/>
+        <xs:element type="xs:long" name="eventTimeZoneOffset"/>
+        <xs:element name="recordedByReader">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="logicalID"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="action">
+          <xs:complexType>
+            <xs:attribute name="resource" type="xs:anyURI"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="hasBusinessStepType">
+          <xs:complexType>
+            <xs:attribute name="resource" type="xs:anyURI"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="hasDisposition">
+          <xs:complexType>
+            <xs:attribute name="resource" type="xs:anyURI"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element type="xs:dateTime" name="eventRecordedAt"/>
+        <xs:element type="xs:string" name="comment"/>
+        <xs:element name="associatedWithEPCList">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="element" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:attribute name="resource" type="xs:anyURI"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

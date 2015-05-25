@@ -1,0 +1,303 @@
+<eem:ObjectEvent xmlns:eem="http://purl.org/FIspace/eem#" xmlns:cbv="http://purl.org/FIspace/cbv#">
+  <hasEventID>0</hasEventID>
+  <label>An ObjectEvent with event ID eve0</label>
+  <eventOccurredAt>2015-04-25T23:15:29.825+01:00</eventOccurredAt>
+  <eventTimeZoneOffset>0</eventTimeZoneOffset>
+  <recordedByReader>
+    <logicalID>102</logicalID>
+  </recordedByReader>
+  <action resource="eem:ADD" />
+  <hasBusinessStepType resource="cbv:commissioning" />
+  <hasDisposition resource="cbv:active" />
+  <eventRecordedAt>2015-04-25T23:15:29.825+01:00</eventRecordedAt>
+  <comment>The object event for commissioning of pharma products</comment>
+  <associatedWithEPCList xmlns:epc="http://fispace.aston.ac.uk/pharmaCo1/data/epc/id/sgtin/">
+    <element resource="epc:030001.0012345.10000001001" />
+    <element resource="epc:030001.0012345.10000001002" />
+    <element resource="epc:030001.0012345.10000001003" />
+    <element resource="epc:030001.0012345.10000001004" />
+    <element resource="epc:030001.0012345.10000001005" />
+    <element resource="epc:030001.0012345.10000001006" />
+    <element resource="epc:030001.0012345.10000001007" />
+    <element resource="epc:030001.0012345.10000001008" />
+    <element resource="epc:030001.0012345.10000001009" />
+    <element resource="epc:030001.0012345.100000010010" />
+    <element resource="epc:030001.0012345.100000010011" />
+    <element resource="epc:030001.0012345.100000010012" />
+    <element resource="epc:030001.0012345.100000010013" />
+    <element resource="epc:030001.0012345.100000010014" />
+    <element resource="epc:030001.0012345.100000010015" />
+    <element resource="epc:030001.0012345.100000010016" />
+    <element resource="epc:030001.0012345.100000010017" />
+    <element resource="epc:030001.0012345.100000010018" />
+    <element resource="epc:030001.0012345.100000010019" />
+    <element resource="epc:030001.0012345.100000010020" />
+  </associatedWithEPCList>
+</eem:ObjectEvent>
+
+<eem:ObjectEvent xmlns:eem="http://purl.org/FIspace/eem#" xmlns:cbv="http://purl.org/FIspace/cbv#">
+  <hasEventID>1</hasEventID>
+  <label>An ObjectEvent with event ID eve1</label>
+  <eventOccurredAt>2015-04-25T23:15:30.658+01:00</eventOccurredAt>
+  <eventTimeZoneOffset>0</eventTimeZoneOffset>
+  <recordedByReader>
+    <logicalID>102</logicalID>
+  </recordedByReader>
+  <action resource="eem:ADD" />
+  <hasBusinessStepType resource="cbv:commissioning" />
+  <hasDisposition resource="cbv:active" />
+  <eventRecordedAt>2015-04-25T23:15:30.658+01:00</eventRecordedAt>
+  <comment>The object event for commissioning of pharma products</comment>
+  <associatedWithEPCList xmlns:epc="http://fispace.aston.ac.uk/pharmaCo1/data/epc/id/sgtin/">
+    <element resource="epc:030001.0012345.100000010021" />
+    <element resource="epc:030001.0012345.100000010022" />
+    <element resource="epc:030001.0012345.100000010023" />
+    <element resource="epc:030001.0012345.100000010024" />
+    <element resource="epc:030001.0012345.100000010025" />
+    <element resource="epc:030001.0012345.100000010026" />
+    <element resource="epc:030001.0012345.100000010027" />
+    <element resource="epc:030001.0012345.100000010028" />
+    <element resource="epc:030001.0012345.100000010029" />
+    <element resource="epc:030001.0012345.100000010030" />
+    <element resource="epc:030001.0012345.100000010031" />
+    <element resource="epc:030001.0012345.100000010032" />
+    <element resource="epc:030001.0012345.100000010033" />
+    <element resource="epc:030001.0012345.100000010034" />
+    <element resource="epc:030001.0012345.100000010035" />
+    <element resource="epc:030001.0012345.100000010036" />
+    <element resource="epc:030001.0012345.100000010037" />
+    <element resource="epc:030001.0012345.100000010038" />
+    <element resource="epc:030001.0012345.100000010039" />
+    <element resource="epc:030001.0012345.100000010040" />
+  </associatedWithEPCList>
+</eem:ObjectEvent>
+
+<eem:ObjectEvent xmlns:eem="http://purl.org/FIspace/eem#" xmlns:cbv="http://purl.org/FIspace/cbv#">
+  <hasEventID>2</hasEventID>
+  <label>An ObjectEvent with event ID eve2</label>
+  <eventOccurredAt>2015-04-25T23:15:31.177+01:00</eventOccurredAt>
+  <eventTimeZoneOffset>0</eventTimeZoneOffset>
+  <recordedByReader>
+    <logicalID>102</logicalID>
+  </recordedByReader>
+  <action resource="eem:ADD" />
+  <hasBusinessStepType resource="cbv:commissioning" />
+  <hasDisposition resource="cbv:active" />
+  <eventRecordedAt>2015-04-25T23:15:31.177+01:00</eventRecordedAt>
+  <comment>The object event for commissioning of pharma products</comment>
+  <associatedWithEPCList xmlns:epc="http://fispace.aston.ac.uk/pharmaCo1/data/epc/id/sgtin/">
+    <element resource="epc:030001.0012345.100000010041" />
+    <element resource="epc:030001.0012345.100000010042" />
+    <element resource="epc:030001.0012345.100000010043" />
+    <element resource="epc:030001.0012345.100000010044" />
+    <element resource="epc:030001.0012345.100000010045" />
+    <element resource="epc:030001.0012345.100000010046" />
+    <element resource="epc:030001.0012345.100000010047" />
+    <element resource="epc:030001.0012345.100000010048" />
+    <element resource="epc:030001.0012345.100000010049" />
+    <element resource="epc:030001.0012345.100000010050" />
+    <element resource="epc:030001.0012345.100000010051" />
+    <element resource="epc:030001.0012345.100000010052" />
+    <element resource="epc:030001.0012345.100000010053" />
+    <element resource="epc:030001.0012345.100000010054" />
+    <element resource="epc:030001.0012345.100000010055" />
+    <element resource="epc:030001.0012345.100000010056" />
+    <element resource="epc:030001.0012345.100000010057" />
+    <element resource="epc:030001.0012345.100000010058" />
+    <element resource="epc:030001.0012345.100000010059" />
+    <element resource="epc:030001.0012345.100000010060" />
+  </associatedWithEPCList>
+</eem:ObjectEvent>
+
+<eem:ObjectEvent xmlns:eem="http://purl.org/FIspace/eem#" xmlns:cbv="http://purl.org/FIspace/cbv#">
+  <hasEventID>3</hasEventID>
+  <label>An ObjectEvent with event ID eve3</label>
+  <eventOccurredAt>2015-04-25T23:15:31.702+01:00</eventOccurredAt>
+  <eventTimeZoneOffset>0</eventTimeZoneOffset>
+  <recordedByReader>
+    <logicalID>102</logicalID>
+  </recordedByReader>
+  <action resource="eem:ADD" />
+  <hasBusinessStepType resource="cbv:commissioning" />
+  <hasDisposition resource="cbv:active" />
+  <eventRecordedAt>2015-04-25T23:15:31.702+01:00</eventRecordedAt>
+  <comment>The object event for commissioning of pharma products</comment>
+  <associatedWithEPCList xmlns:epc="http://fispace.aston.ac.uk/pharmaCo1/data/epc/id/sgtin/">
+    <element resource="epc:030001.0012345.100000010061" />
+    <element resource="epc:030001.0012345.100000010062" />
+    <element resource="epc:030001.0012345.100000010063" />
+    <element resource="epc:030001.0012345.100000010064" />
+    <element resource="epc:030001.0012345.100000010065" />
+    <element resource="epc:030001.0012345.100000010066" />
+    <element resource="epc:030001.0012345.100000010067" />
+    <element resource="epc:030001.0012345.100000010068" />
+    <element resource="epc:030001.0012345.100000010069" />
+    <element resource="epc:030001.0012345.100000010070" />
+    <element resource="epc:030001.0012345.100000010071" />
+    <element resource="epc:030001.0012345.100000010072" />
+    <element resource="epc:030001.0012345.100000010073" />
+    <element resource="epc:030001.0012345.100000010074" />
+    <element resource="epc:030001.0012345.100000010075" />
+    <element resource="epc:030001.0012345.100000010076" />
+    <element resource="epc:030001.0012345.100000010077" />
+    <element resource="epc:030001.0012345.100000010078" />
+    <element resource="epc:030001.0012345.100000010079" />
+    <element resource="epc:030001.0012345.100000010080" />
+  </associatedWithEPCList>
+</eem:ObjectEvent>
+
+<eem:ObjectEvent xmlns:eem="http://purl.org/FIspace/eem#" xmlns:cbv="http://purl.org/FIspace/cbv#">
+  <hasEventID>4</hasEventID>
+  <label>An ObjectEvent with event ID eve4</label>
+  <eventOccurredAt>2015-04-25T23:15:32.224+01:00</eventOccurredAt>
+  <eventTimeZoneOffset>0</eventTimeZoneOffset>
+  <recordedByReader>
+    <logicalID>102</logicalID>
+  </recordedByReader>
+  <action resource="eem:ADD" />
+  <hasBusinessStepType resource="cbv:commissioning" />
+  <hasDisposition resource="cbv:active" />
+  <eventRecordedAt>2015-04-25T23:15:32.224+01:00</eventRecordedAt>
+  <comment>The object event for commissioning of pharma products</comment>
+  <associatedWithEPCList xmlns:epc="http://fispace.aston.ac.uk/pharmaCo1/data/epc/id/sgtin/">
+    <element resource="epc:030001.0012345.100000010081" />
+    <element resource="epc:030001.0012345.100000010082" />
+    <element resource="epc:030001.0012345.100000010083" />
+    <element resource="epc:030001.0012345.100000010084" />
+    <element resource="epc:030001.0012345.100000010085" />
+    <element resource="epc:030001.0012345.100000010086" />
+    <element resource="epc:030001.0012345.100000010087" />
+    <element resource="epc:030001.0012345.100000010088" />
+    <element resource="epc:030001.0012345.100000010089" />
+    <element resource="epc:030001.0012345.100000010090" />
+    <element resource="epc:030001.0012345.100000010091" />
+    <element resource="epc:030001.0012345.100000010092" />
+    <element resource="epc:030001.0012345.100000010093" />
+    <element resource="epc:030001.0012345.100000010094" />
+    <element resource="epc:030001.0012345.100000010095" />
+    <element resource="epc:030001.0012345.100000010096" />
+    <element resource="epc:030001.0012345.100000010097" />
+    <element resource="epc:030001.0012345.100000010098" />
+    <element resource="epc:030001.0012345.100000010099" />
+    <element resource="epc:030001.0012345.1000000100100" />
+  </associatedWithEPCList>
+</eem:ObjectEvent>
+
+<eem:AggregationEvent xmlns:eem="http://purl.org/FIspace/eem#" xmlns:cbv="http://purl.org/FIspace/cbv#">
+  <hasEventID>5</hasEventID>
+  <label>An AggregationEvent with event ID eve5</label>
+  <eventOccurredAt>2015-04-25T23:15:33.741+01:00</eventOccurredAt>
+  <eventTimeZoneOffset>0</eventTimeZoneOffset>
+  <hasAggregationURI resource="age:030001.1012345.2222222333" />
+  <recordedByReader>
+    <logicalID>104</logicalID>
+  </recordedByReader>
+  <action resource="eem:ADD" />
+  <hasBusinessStepType resource="cbv:packing" />
+  <hasDisposition resource="cbv:in_progress" />
+  <eventRecordedAt>2015-04-25T23:15:33.741+01:00</eventRecordedAt>
+  <comment>The aggregation event for packing of pharma products</comment>
+  <associatedWithEPCList xmlns:epc="http://fispace.aston.ac.uk/pharmaCo1/data/epc/id/sgtin/">
+    <element resource="epc:030001.0012345.10000001001" />
+    <element resource="epc:030001.0012345.10000001002" />
+    <element resource="epc:030001.0012345.10000001003" />
+    <element resource="epc:030001.0012345.10000001004" />
+    <element resource="epc:030001.0012345.10000001005" />
+    <element resource="epc:030001.0012345.10000001006" />
+    <element resource="epc:030001.0012345.10000001007" />
+    <element resource="epc:030001.0012345.10000001008" />
+    <element resource="epc:030001.0012345.10000001009" />
+    <element resource="epc:030001.0012345.100000010010" />
+    <element resource="epc:030001.0012345.100000010011" />
+    <element resource="epc:030001.0012345.100000010012" />
+    <element resource="epc:030001.0012345.100000010013" />
+    <element resource="epc:030001.0012345.100000010014" />
+    <element resource="epc:030001.0012345.100000010015" />
+    <element resource="epc:030001.0012345.100000010016" />
+    <element resource="epc:030001.0012345.100000010017" />
+    <element resource="epc:030001.0012345.100000010018" />
+    <element resource="epc:030001.0012345.100000010019" />
+    <element resource="epc:030001.0012345.100000010020" />
+    <element resource="epc:030001.0012345.100000010021" />
+    <element resource="epc:030001.0012345.100000010022" />
+    <element resource="epc:030001.0012345.100000010023" />
+    <element resource="epc:030001.0012345.100000010024" />
+    <element resource="epc:030001.0012345.100000010025" />
+    <element resource="epc:030001.0012345.100000010026" />
+    <element resource="epc:030001.0012345.100000010027" />
+    <element resource="epc:030001.0012345.100000010028" />
+    <element resource="epc:030001.0012345.100000010029" />
+    <element resource="epc:030001.0012345.100000010030" />
+    <element resource="epc:030001.0012345.100000010031" />
+    <element resource="epc:030001.0012345.100000010032" />
+    <element resource="epc:030001.0012345.100000010033" />
+    <element resource="epc:030001.0012345.100000010034" />
+    <element resource="epc:030001.0012345.100000010035" />
+    <element resource="epc:030001.0012345.100000010036" />
+    <element resource="epc:030001.0012345.100000010037" />
+    <element resource="epc:030001.0012345.100000010038" />
+    <element resource="epc:030001.0012345.100000010039" />
+    <element resource="epc:030001.0012345.100000010040" />
+    <element resource="epc:030001.0012345.100000010041" />
+    <element resource="epc:030001.0012345.100000010042" />
+    <element resource="epc:030001.0012345.100000010043" />
+    <element resource="epc:030001.0012345.100000010044" />
+    <element resource="epc:030001.0012345.100000010045" />
+    <element resource="epc:030001.0012345.100000010046" />
+    <element resource="epc:030001.0012345.100000010047" />
+    <element resource="epc:030001.0012345.100000010048" />
+    <element resource="epc:030001.0012345.100000010049" />
+    <element resource="epc:030001.0012345.100000010050" />
+    <element resource="epc:030001.0012345.100000010051" />
+    <element resource="epc:030001.0012345.100000010052" />
+    <element resource="epc:030001.0012345.100000010053" />
+    <element resource="epc:030001.0012345.100000010054" />
+    <element resource="epc:030001.0012345.100000010055" />
+    <element resource="epc:030001.0012345.100000010056" />
+    <element resource="epc:030001.0012345.100000010057" />
+    <element resource="epc:030001.0012345.100000010058" />
+    <element resource="epc:030001.0012345.100000010059" />
+    <element resource="epc:030001.0012345.100000010060" />
+    <element resource="epc:030001.0012345.100000010061" />
+    <element resource="epc:030001.0012345.100000010062" />
+    <element resource="epc:030001.0012345.100000010063" />
+    <element resource="epc:030001.0012345.100000010064" />
+    <element resource="epc:030001.0012345.100000010065" />
+    <element resource="epc:030001.0012345.100000010066" />
+    <element resource="epc:030001.0012345.100000010067" />
+    <element resource="epc:030001.0012345.100000010068" />
+    <element resource="epc:030001.0012345.100000010069" />
+    <element resource="epc:030001.0012345.100000010070" />
+    <element resource="epc:030001.0012345.100000010071" />
+    <element resource="epc:030001.0012345.100000010072" />
+    <element resource="epc:030001.0012345.100000010073" />
+    <element resource="epc:030001.0012345.100000010074" />
+    <element resource="epc:030001.0012345.100000010075" />
+    <element resource="epc:030001.0012345.100000010076" />
+    <element resource="epc:030001.0012345.100000010077" />
+    <element resource="epc:030001.0012345.100000010078" />
+    <element resource="epc:030001.0012345.100000010079" />
+    <element resource="epc:030001.0012345.100000010080" />
+    <element resource="epc:030001.0012345.100000010081" />
+    <element resource="epc:030001.0012345.100000010082" />
+    <element resource="epc:030001.0012345.100000010083" />
+    <element resource="epc:030001.0012345.100000010084" />
+    <element resource="epc:030001.0012345.100000010085" />
+    <element resource="epc:030001.0012345.100000010086" />
+    <element resource="epc:030001.0012345.100000010087" />
+    <element resource="epc:030001.0012345.100000010088" />
+    <element resource="epc:030001.0012345.100000010089" />
+    <element resource="epc:030001.0012345.100000010090" />
+    <element resource="epc:030001.0012345.100000010091" />
+    <element resource="epc:030001.0012345.100000010092" />
+    <element resource="epc:030001.0054321.100000010081" />
+    <element resource="epc:030001.0054321.100000010082" />
+    <element resource="epc:030001.0054321.100000010083" />
+    <element resource="epc:030001.0054321.100000010084" />
+    <element resource="epc:030001.0054321.100000010085" />
+    <element resource="epc:030001.0054321.100000010086" />
+    <element resource="epc:030001.0054321.100000010087" />
+    <element resource="epc:030001.0054321.100000010088" />
+  </associatedWithEPCList>
+</eem:AggregationEvent>
+

@@ -1,0 +1,6 @@
+module supplychain.parameters_exp1;
+
+create constant variable long twinc = 5; // Lost after commissioning window length in seconds
+
+create constant variable long finalTimeAdvance = 32400L; // End-of-processing time advance in seconds
+

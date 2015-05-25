@@ -1,0 +1,50 @@
+module supplychain.pack_ship;
+
+create schema EventEPC (hasEventID string, EPCNumber string);
+
+create window PackingAGEs.win:time(120 sec) as EventEPC;
+
+@Name("SelectAGEFromPacking")
+@Description('Extract Aggregation URIs from packing events.')
+insert into PackingAGEs
+select hasEventID, hasAggregationURI.resource as EPCNumber
+                         from AggregationEvent(hasBusinessStepType.resource="cbv:packing",
+                                          action.resource="eem:ADD",
+                                          hasDisposition.resource="cbv:in_progress");
+
+create window ShippingAGEs.win:time(1 sec) as EventEPC;
+
+@Name("SelectAGEFromShipping")
+@Description('Extract Aggregation URIs from shipping events.')
+insert into ShippingAGEs
+select hasEventID, resource as EPCNumber
+                         from ObjectEvent(hasBusinessStepType.resource="cbv:shipping",
+                                          action.resource="eem:OBSERVE",
+                                          hasDisposition.resource="cbv:in_transit")
+                           [select hasEventID, resource from associatedWithEPCList.element];
+
+create schema EPCEntry (EPCNumber string);
+
+create window MatchingAGEs.win:time(1 sec) as EPCEntry;
+
+@Name("MatchingAGEs")
+@Description('Generate a stream of matching packing and shipping AGEs.')
+insert into MatchingAGEs
+select PackingAGEs.EPCNumber as EPCNumber
+from PackingAGEs, ShippingAGEs
+where PackingAGEs.EPCNumber = ShippingAGEs.EPCNumber;
+
+on MatchingAGEs
+delete from PackingAGEs
+where MatchingAGEs.EPCNumber = PackingAGEs.EPCNumber;
+
+on MatchingAGEs
+delete from ShippingAGEs
+where MatchingAGEs.EPCNumber = ShippingAGEs.EPCNumber;
+
+@Name("CSV:LostAfterPacking")
+@Description('Print out packed AGEs not found in shipping.')
+select 'eve:eve' || hasEventID as A, 'LostAfterPacking' as B, EPCNumber as C
+from PackingAGEs
+where EPCNumber not in (select EPCNumber from MatchingAGEs);
+

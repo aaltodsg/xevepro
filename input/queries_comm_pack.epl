@@ -1,0 +1,57 @@
+module supplychain.comm_pack;
+
+create schema EventEPC (hasEventID string, EPCNumber string);
+
+create window CommissioningEPCs.win:time(twinc sec) as EventEPC;
+
+@Name("SelectEPCFromCommissioning")
+@Description('Extract EPCs from commissioning events.')
+insert into CommissioningEPCs
+select hasEventID, resource as EPCNumber
+                         from ObjectEvent(hasBusinessStepType.resource="cbv:commissioning",
+                                          action.resource="eem:ADD",
+                                          hasDisposition.resource="cbv:active")
+                           [select hasEventID, resource from associatedWithEPCList.element];
+
+create window PackingEPCs.win:time(1 sec) as EventEPC;
+
+@Name("SelectEPCFromPacking")
+@Description('Extract EPCs from packing events.')
+insert into PackingEPCs
+select hasEventID, resource as EPCNumber
+                         from AggregationEvent(hasBusinessStepType.resource="cbv:packing",
+                                          action.resource="eem:ADD",
+                                          hasDisposition.resource="cbv:in_progress")
+                           [select hasEventID, resource from associatedWithEPCList.element];
+
+create schema EPCEntry (EPCNumber string);
+
+create window MatchingEPCs.win:time(1 sec) as EPCEntry;
+
+@Name("MatchingEPCs")
+@Description('Generate a stream of matching commissioning and packing EPCs.')
+insert into MatchingEPCs
+select CommissioningEPCs.EPCNumber as EPCNumber
+from CommissioningEPCs, PackingEPCs
+where CommissioningEPCs.EPCNumber = PackingEPCs.EPCNumber;
+
+on MatchingEPCs
+delete from CommissioningEPCs
+where MatchingEPCs.EPCNumber = CommissioningEPCs.EPCNumber;
+
+on MatchingEPCs
+delete from PackingEPCs
+where MatchingEPCs.EPCNumber = PackingEPCs.EPCNumber;
+
+@Name("CSV:LostAfterCommissioning")
+@Description('Print out Commissioning EPCs not matching packing EPCs.')
+select rstream 'eve:eve' || hasEventID as A, 'LostAfterCommissioning' as B, EPCNumber as C
+from CommissioningEPCs
+where EPCNumber not in (select EPCNumber from MatchingEPCs);
+
+@Name("CSV:CounterfeitInPacking")
+@Description('Print out packing EPCs without matching commissioning EPCs.')
+select rstream 'eve:eve' || hasEventID as A, 'CounterfeitInPacking' as B, EPCNumber as C
+from PackingEPCs
+where EPCNumber not in (select EPCNumber from MatchingEPCs);
+

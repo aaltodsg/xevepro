@@ -1,0 +1,7 @@
+module supplychain.time_extract;
+
+@Name("XSDDateTime:ObjectEvent")
+select eventOccurredAt as XSDDateTime from ObjectEvent;
+
+@Name("XSDDateTime:AggregationEvent")
+select eventOccurredAt as XSDDateTime from AggregationEvent;
