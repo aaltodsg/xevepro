@@ -90,7 +90,10 @@ object XEveProMain extends MyLog {
             argList = tail
           }
           case "--time" :: string :: tail => {
-            if (tStart > 0L) timerFileHandle.close()
+            if (tStart > 0L) {
+              printTimer("Re-starting timer to "+string+". Old value.")
+              timerFileHandle.close()
+            }
             var writeFileName = ""
             if (string == "-") writeFileName="/dev/stdout" else writeFileName=string
             timerFileHandle = {
@@ -101,7 +104,7 @@ object XEveProMain extends MyLog {
                   null }
               }
             }
-            tStart = System.nanoTime() // May also consider nanoTime
+            tStart = System.nanoTime()
             argList = tail
           }
           case "-v" :: tail => {
