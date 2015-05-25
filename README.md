@@ -17,7 +17,7 @@ Has been developed as an [SBT](http://www.scala-sbt.org/) project under [IDEA](h
 
 1) Install SBT if not already installed.
 
-2) Clone this repository.
+2) Clone this repository: `$ git clone https://github.com/aaltodsg/xevepro.git`
 
 3) Run SBT from repository root: `$ sbt`
 
@@ -38,7 +38,7 @@ Output should look like:
 
 ## Instructions for use
 
-Some instructions are available in the github wiki.
+Some instructions ([configuration](https://github.com/aaltodsg/xevepro/wiki/Configuration) and [command line parameters](https://github.com/aaltodsg/xevepro/wiki/Command-line-parameters)) are available in the [project github wiki](https://github.com/aaltodsg/xevepro/wiki).
 
 ## Credits
 

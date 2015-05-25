@@ -21,7 +21,8 @@
         </xml-dom>
     </event-type>
 
-    <event-type name="CSVOut">
-    </event-type>
+    <!-- MJR: Added this originally, but it doesn't appear to be necessary -->
+ <!--   <event-type name="CSVOut">
+    </event-type> -->
 
 </esper-configuration>
