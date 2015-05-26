@@ -22,7 +22,7 @@ object XEveProMain extends MyLog {
 
   val argInfo =
     s"""
-       |Arguments: -h -v -r rulefile -i eventfile --select-output=outputfile
+       |Arguments: -h -v --csv-output=csvfile -r rulefile --time=timefile -i eventfile
        |
        |-h: Display this help text and terminate processing.
        |-v: Display build info.
@@ -32,7 +32,10 @@ object XEveProMain extends MyLog {
        |   Defaults to '/dev/stdout'.
        |--time=timefile: Starts a timer from the parameter onwards. '--time=-' outputs to /dev/stdout
        |
-       |Note: Command line arguments are processed sequentially and the order counts!
+       |Note1: Command line arguments are processed sequentially and the order counts!
+       |
+       |Note2: --csv-output and --time can also be separated by space. If your path contains spaces,
+       |       use '--csv-output "my file with spaces.csv"'
     """.stripMargin
 
   // private var sampleMemory = false
@@ -62,8 +65,9 @@ object XEveProMain extends MyLog {
           if (arg.contains('=')) {
             argBuffer ++= arg.split("=")
           } else {
-            error("Don't know how to parse: "+arg)
-            println(argInfo)
+            argBuffer += arg // accept both space and = because SBT messes up filenames with spaces otherwise
+            // error("Don't know how to parse: "+arg)
+            // println(argInfo)
           }
         } else {
           argBuffer += arg
@@ -86,6 +90,7 @@ object XEveProMain extends MyLog {
           }
           case "--csv-output" :: string :: tail => {
             EsperHandler.closeCSVOutput()
+            // println("Opening file: "+string+" for csv-output")
             EsperHandler.openCSVOutput(string)
             argList = tail
           }
