@@ -40,6 +40,14 @@ Output should look like:
 
 Some instructions ([configuration](https://github.com/aaltodsg/xevepro/wiki/Configuration) and [command line parameters](https://github.com/aaltodsg/xevepro/wiki/Command-line-parameters)) are available in the [project github wiki](https://github.com/aaltodsg/xevepro/wiki).
 
+## Problems and Solutions
+
+### Null pointer exception in loading XML schemas
+
+Appears to be a bug in Java manifesting in Esper: "DOM error reported
+loading schema from AggregationEvent.xsd" We have observed the problem
+with Java 7u51 and 7u71, while 7u72 and 7u79 have worked correctly. 
+
 ## Credits
 
 The included [example from pharmaceutical industry](http://windermere.aston.ac.uk/~solankm2/papers/MonikaSolankiISWC2014.pdf) appears courtesy of [Monika Solanki](http://www.monikasolanki.com).
